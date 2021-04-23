@@ -1,0 +1,43 @@
+Name: Albara Mehene
+Date: 4/30/2016
+Computing III
+Professor: Anna Rumshisky
+
+1) For the Card Class, I created 2 members called Face and Suit. The constructor is basically how it is normally. I created a friend function of operator < to be able to determine what a straight is. I need to order the cards in the hands first. I had the usual geters and seters for Face and Suit. In the Card Implementation file, I created faces and suits in static arrays. Then printed them out together in the to toString function
+
+For the Deck Class, I had a Vector of cards named deck and a currentcard as members. I didnt need to use geters in seters. I created the shuffle, dealCard, and moreCards functions in h file. In the Deck implementation, The constructor creates the actual 52 decks. Also I created a seed so it doesnt create the deck in the same order. In the shuffle function, I used a function called random_shuffle that is intended to shuffle the whole decks from begining to end of the array. The dealCard function was to be able to give a card to the hand that calls it. To do that, I used the pop_back function to take the first card from the back of the deck. The moreCard function was to check if the deck has cards left.
+
+2) I figured implementing the hand functions in the client to make it more easier on me. For all the hand functions, I passed the hand.In the one Pair, I thought knowing the sie of hand would be helpul for the loop to stop. I created another loop and this was the actual looping. So first I had i be in the begining of the hand. Then Have j right after i. So as it goes through the hand it will constannly try to find the the similar value In the two pair, It is basically the same as the the one pair, however it will look for 2 pairs of of 1 value. Doing this, I created the same variable and incremented to have it go through multiple times. In the three of a kind function, it is basically the same as two pair but instead it would stop at 3. For four of a kind, it would stop until it found 4 of the same kind. Now in the flush I needed to go through all the hand to determine if it was a flush. However It wasnt working which confused me. Supposbly the loop adds 5 to the array so I needed to divide it by 2 for it to work.
+The straight, I needed to sort the hand before determining its a straight. Then it was basically the same as the previous loops
+
+3)To determine the who one the poker game, All i did was give a value to each hand. For example, straight =6, flush =5, etc. Then returned the value, compared which hand one and printed it out.
+
+4) So to have the dealer, have its hand hidden I needed to create a hand class and implementation. I included the the Face_down function as abool. So I created the Hands in the client, and gave the dealer a 0 and a player a 1. Essisally to have dealers hand face down.In the the loop, I wrote if its not 1, to not print out the hand but to still give the hand to the dealer. To figure out what the dealer needed, I created three functions. The first function called dealer AI would store all the pairs, kinds, straights, etc and store it into a array.take the amount of the dealers hand and save it. THen would go through the loop. Then calls the dropping function. In the dropping function, I thought having a switch statment would be easier to do. so this was the easy part and just went through the hand and used a function called adjacent _find. It would go through the hand.Tutor helped me a lot for this part.
+
+5)To ask the player for his hand, I needed to create a swap function for the player that needed to be added in the hand class. For the swap function all I did was go through the hand in a loop and then switch the oldcard and new cards suits faces through the if statment and for loop to iterator until 5th element.  I created a function for the player to replace his or her card.Its was the easiest. I needed a pointer to the hand and the Card variable also. The strategy I used to win those games, was the get the better pairs like 2 pairs. But it ended up having me lose. So I switched the lowest cards and kept the highest cards like queen and kings. Ended up winning a lot more but still lost a bit.
+
+20 games wins:
+
+Player			
+Dealer
+Dealer
+Player
+Tie
+Player
+Dealer
+Dealer
+Dealer
+Player
+Dealer
+Player
+Dealer
+Tie
+Dealer
+Tie
+Player
+Player
+Dealer
+Player
+
+
+

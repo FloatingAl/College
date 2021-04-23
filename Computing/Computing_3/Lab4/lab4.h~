@@ -1,0 +1,27 @@
+using namespace std;
+
+
+class Shape {
+public:
+//Default Constructor
+Shape(){
+}
+
+  //Functions
+  
+	
+};
+
+class TwoDS : public Shape{
+
+public:
+
+};
+
+class ThreeDS : public Shape{
+private:
+	double	volume;
+	double	height;	
+public:
+
+};

@@ -1,0 +1,39 @@
+Albara Mehene
+
+Computing II
+
+10/21/2015
+
+arr{5,4}
+
+answer {arr n4[15+5] 20} 
+
+answer {arr n3[10+5]15}
+
+answer {arr n2[5+5]10}
+
+answer {arr n1[0+5] 5
+
+answer {arr n0[]} 0
+
+
+arr{1,2,3,4,5}
+value to find is 3
+
+search{first[0] 1, Last[4] 3)
+
+search(first[(0+1)=1] 2, Last[(4-1)=3] 4)
+
+search(first[(1+1)=2] 3, Last[(3-1) = 2] 3)
+
+return 1
+
+If First and last could not find the value in the array, It would return 0
+
+
+1) For the multiply function, the base case is 0 for the recusion to stop. I subtracted the second multiple by 1 and added the first number to the return value. I then held the value of the last value and then returned to the final prouct.
+
+
+2) In the search function I had the first be the first element and the last to be last element. When the user asks the number, Last will check if the number is in the array if not will subract 1 of the element. So it will be basically check backwards. Same with First but instead I add 1, so I am goin forword. 
+
+ 

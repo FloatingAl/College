@@ -1,0 +1,18 @@
+Albara Mehene
+
+11/24/2015
+
+lab9
+
+
+1) I created a menu first to figure out what I will be needing to make the program.
+
+2) basically what I did was I created first the enter info function.  It is basically a function for the user to enter as many names and usernames. I created two char arrays to store the strings. After that I would called the search function. If the username is succesful, it will malloc space for the name and username. THen it will store it into the node. and add a node to the list. returning 1.
+
+3)In the seatch function I needed to check if the user was unique so I iterated to see if the user was in the list return if it succesful.
+
+4)In the log in function, I needed to create a something else in the node called status. It iterate through the list. While is it checking the username, I am having the the status in the node. So basically what the status is that if the status of a username is 1 it is succesfully loged in. If it is 0 then the user is offline.
+
+5)For the log out function it is the same as the log in function, but it was in reverse.
+
+6) Then I just created a function to show the users if they are online or offline.

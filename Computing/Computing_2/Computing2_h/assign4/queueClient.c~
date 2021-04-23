@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include "linkedListQueue.h"
+#include "queueInterface.h"
+
+int main(void)
+{//Made a linklist of 10 spaces
+  QUEUEinit(10);
+//I put the numbers 20 and 30
+  QUEUEput(20);
+  QUEUEput(30);
+  Item item = QUEUEget();
+  printf("The first item is %d\n",item);
+  //Add here other get and put to make sure that the queue works     correctly
+  QUEUEput(10);
+  item = QUEUEget();
+  printf("The next item is %d\n",item);
+	return 0;
+
+}

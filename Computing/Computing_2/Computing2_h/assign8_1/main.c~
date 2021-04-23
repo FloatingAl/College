@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include "item.h"
+#include "linkedListSt.h"
+
+int main(void)
+{	
+	pLinkedList list = linkedlistInitDefault();
+	linkedlistScanInit(list);
+	linkedlistShow(list);
+	linkedlistDestroy(&list);
+	
+	return 0;
+
+}

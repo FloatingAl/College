@@ -1,0 +1,19 @@
+Albara Mehene
+
+10/17/2015
+
+Computing II
+
+What I Did)
+
+1) For the item, I create 2 strings that are both char* because we needed the user to enter strings. So for later it can determine which string is greater.
+
+2) Now in the linkedlist Scaninit, I created a variable called input to link to data in the linklist. I made another variable called string so it can stop when the person is done.
+
+3)I malloced enough space for each time they enter a string.
+
+4) then had them enter a string, then giving the string to the Addnoteback and created a node that contains that info.
+
+5) This will contine unti lthe user hits 0 to end the program.
+
+6) For the linkedlistshow, I create Node temp and had to equal to the front of the list. Then I iterated through the list and printed out each node until it hits NULL.

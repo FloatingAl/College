@@ -1,0 +1,8 @@
+#ifndef RECURSION_H
+#define RECURSION_H
+
+int multiply (int mult1, int mult2);
+
+int search(int *arr, int value, int first, int last);
+
+#endif

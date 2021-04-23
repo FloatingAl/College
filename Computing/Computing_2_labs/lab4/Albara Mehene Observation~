@@ -1,0 +1,12 @@
+Albara Mehene
+91.102
+
+
+The bugs what were in the program, were all from the findCity.C. In the findCity function, the integer i was being used in the for loop and was being reinitialized as 0. We want to keep -1 because
+it would return -1 if the location didn't exit. We needed to create another variable to implement the for loop and once it equals to -1 it breaks and returns 1.
+
+Same with the findcity2, I needed to create another variable to implement the for loop and then break but if the area doesnt exist it will return -1.
+
+
+
+

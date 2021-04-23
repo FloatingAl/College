@@ -1,0 +1,89 @@
+#include "markov.hpp"
+
+
+MarkovModel::MarkovModel(std::string text, int k){
+  //how many chars we look at to determine the next char
+  _order = k;
+
+  std::String tempString;
+  std::map<std::string, int> tempMap;
+
+  //store the chars that appear in text into the alphabet
+  for(int i = 0; i < text.size(); ++i){
+    //put the char into the temp map with a count of 1
+    tempMap[text.at(i)] = 1;
+    //if the char is already in the alphabet...
+    if(_alphabet.find(/*something*/)){
+      //increase the count of that letter by 1
+      
+    }
+    else//insert the new char into the alphabet
+      _alphabet.insert(std::pair<char, int>(text.at(i), 1));  
+  }
+
+  //store the selected chars into the map
+  for(int i = 0; i < text.size(); i += _order){
+    tempString = tempString.str(i, _order);
+    _kgram[tempString] = i;
+  }
+
+}
+
+int MarkovModel::order(){
+	return _order;
+}
+
+int MarkovModel::freq(std::string kgram){	
+  //if the kgram is longer than the provided text/string...
+  if(order() != kgram.length())
+    throw std::runtime_error("Kgram is not of length k");
+	
+  int numOfkGram;
+  //go through the map and count how many times we have the string kgram
+  numOfkGram = _kgram.count(kgram);
+
+  return numOfkGram;
+}
+
+int MarkovModel::freq(std::string kgram, char c){	
+  if(kgram != order())
+    throw std::runtime_error("Kgram is not of length k");
+
+  int count;
+  //if order is 0 do something else
+  if(_order != 0){
+    //number of times char c follows kgram
+    
+    count = ;
+  }
+  else{
+    //how many times char c appears in the map
+    count = _alphabet.find(c);
+  }
+  return count;
+}
+
+char MarkovModel::randk(std::string kgram){
+  if(kgram != order())
+    throw std::runtime_error("Kgram is not of length k");
+	
+  //if there is no such kgram
+  if()
+    throw std::runtime_error("No such kgram");
+
+  return ;
+}
+
+std::string MarkovModel::gen(std::string kgram, int T){
+  if(kgram != order())
+    throw std::runtime_error("Kgram is not of length k");
+
+}
+
+std::ostream& MarkovModel::operator<<(std::ostream &out, MarkovModel &mm){
+   
+}
+
+MarkovModel::~MarkovModel(){
+
+};

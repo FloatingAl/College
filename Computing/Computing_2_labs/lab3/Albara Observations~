@@ -1,0 +1,19 @@
+Albara Mehene
+
+Lab3
+9/28/2015
+
+So when when we make the file its runs normally, When we add a comment
+in the main and make the file again, it only makes the main part only.
+Same with add.c and mult.c. When I wrote a comment, I only changed the
+add.c and mult.c. so it basically updated and only make file add.c and 
+mult.c.
+
+Example:
+After making a file, I put a comment in my add and showed this only:
+cc    -c -o my_add.o my_add.c
+gcc main.o my_add.o my_mult.o -o main
+
+
+With the .h files
+

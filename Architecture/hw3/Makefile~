@@ -1,0 +1,20 @@
+cc = g++
+#all
+
+
+all : main
+
+main : main.o
+	$(cc) -Wall -Werror -ansi -pedantic arch_hw3.cpp -o main
+
+main.o :
+	$(cc) -c arch_hw3.cpp -o main.o
+
+
+clean:
+	rm *.o main
+
+run:
+	./main
+
+debug: cc += -g

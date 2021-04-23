@@ -1,0 +1,16 @@
+Albara Mehene
+
+91.102
+
+10/26.2015
+
+
+Counting and Height
+
+1) I first create private function for both the count function and the height function also
+
+2)I read the page where they created the count and the height
+
+3) For the count, I gave it the root and wanted to first check if it had the root/nodes to being with. If it did, it would return 0. I then call the function again of NodeTreeCount for the left and right and then add them together adding 1 return the end value of it..
+
+4)For the height, I made two variables to store the value of NodetreeHeight of left and right. Then I comparted the two values If u is less than v, I added 1 to the left node anything else would add 1 to the right node.

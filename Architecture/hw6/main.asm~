@@ -1,0 +1,13 @@
+main:   lodd arg1:
+        push
+        call lcshft:
+        stod rslt:
+        lodd arg1:
+        push
+        call triple:
+        stod rslt3:
+        halt
+.LOC 15
+arg1: 7
+rslt: 0
+rslt3: 0

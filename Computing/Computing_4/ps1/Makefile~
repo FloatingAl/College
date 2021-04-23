@@ -1,0 +1,21 @@
+cc = g++
+#all
+
+
+all : main
+
+main : main.o
+	$(cc) -Wall -Werror -ansi -pedantic main.cpp -o main
+
+main.o :
+	$(cc) -c main.cpp -o main.o
+
+
+clean:
+	rm *.o main
+
+run:
+	./main
+
+debug: cc += -g
+debug: main

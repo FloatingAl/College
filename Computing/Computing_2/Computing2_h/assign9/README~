@@ -1,0 +1,13 @@
+Albara Mehene
+
+Computing II
+
+
+What I Did)
+1)
+Pretty much created two functions called merge and mergesort. I first creating the merging function. I made two Nodes called left anf right. I first check to see if the strings are greater than or less than each other by calling the less function I created from the previous assignment. If it returns something else than 0, It will change the left node to go to the next node. Then anything else, It would do it to the right node.Then I would return the head. of next to the merge sort function.
+
+2)
+For the mergesort function, I check the list if its empty first if so it will return it. Then I have left equal to oder and then have right equal to next of next.Now comes the iteration, I say if the right node which is next not equal to null or the next node is null. I make order equal to the previos node and make right the next next node. after 
+the orginal possion After that call the merge sort 3 times to check the left and right and then return the string 
+character back 

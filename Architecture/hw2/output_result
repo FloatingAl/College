@@ -1,0 +1,57 @@
+Name: Albara Mehene
+
+Please enter the first floating point number: 34.5
+Please enter the second floating point number: 1.25
+Orginal pattern of Float 1:  0 1000 0100 000 1010 0000 0000 0000 0000  
+Orginal pattern of Float 2:  0 0111 1111 010 0000 0000 0000 0000 0000  
+Bit pattern of result:  0 1000 0100 000 1011 0000 0000 0000 0000  
+Emulated result from printf ==>>>  34.75
+Hardware result from printf ==>>>  35.75
+
+Please enter the first floating point number: 2.75e3
+Please enter the second floating point number: 256.0
+Orginal pattern of Float 1:  0 1000 1010 010 1011 1110 0000 0000 0000  
+Orginal pattern of Float 2:  0 1000 0111 000 0000 0000 0000 0000 0000  
+Bit pattern of result:  0 1000 1010 010 1011 1110 0000 0000 0000  
+Emulated result from printf ==>>>  2750
+Hardware result from printf ==>>>  3006
+
+Please enter the first floating point number: 1.4e-3
+Please enter the second floating point number: 13.0
+Orginal pattern of Float 1:  0 0111 0101 011 0111 1000 0000 0011 0100  
+Orginal pattern of Float 2:  0 1000 0010 101 0000 0000 0000 0000 0000  
+Bit pattern of result:  0 1000 0010 101 0000 0000 0001 1011 1100  
+Emulated result from printf ==>>>  13.0004
+Hardware result from printf ==>>>  13.0014
+
+Please enter the first floating point number: 7.491
+Please enter the second floating point number: 4.617e20
+Orginal pattern of Float 1:  0 1000 0001 110 1111 1011 0110 0100 0110  
+Orginal pattern of Float 2:  0 1100 0011 100 1000 0011 1010 1111 1111  
+Bit pattern of result:  0 1100 0011 110 0100 0010 1000 1001 0000  
+Emulated result from printf ==>>>  5.26098e+20
+Hardware result from printf ==>>>  4.617e+20
+
+Please enter the first floating point number: 9643.0
+Please enter the second floating point number: 1.237e-2
+Orginal pattern of Float 1:  0 1000 1100 001 0110 1010 1100 0000 0000  
+Orginal pattern of Float 2:  0 0111 1000 100 1010 1010 1011 1000 1010  
+Bit pattern of result:  0 1000 1100 001 0110 1010 1100 0000 0100  
+Emulated result from printf ==>>>  9643
+Hardware result from printf ==>>>  9643.01
+
+Please enter the first floating point number: 25e37
+Please enter the second floating point number: 15e37
+Orginal pattern of Float 1:  0 1111 1110 011 1100 0001 0100 0100 0000  
+Orginal pattern of Float 2:  0 1111 1101 110 0001 1011 0001 1110 0110  
+Bit pattern of result:  0 1111 1110 110 1100 1110 1101 0011 0011  
+Emulated result from printf ==>>>  3.14929e+38
+Hardware result from printf ==>>>  inf
+
+
+Note:
+As you can see, all the number were close to the hardware result by about 1-10.
+
+
+
+

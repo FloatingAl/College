@@ -1,0 +1,16 @@
+Albara Mehene
+
+12/3/2015
+
+What I did)
+
+1)So I created a another linklist called Sorted list to be able to put the smallest character to the the first index in the list.
+2) I created 4 nodes to used in sorting the strings. two of them I set to the front of the list current and hold. prev and prevHold is to know the previous node
+
+3)Then in the while loop I iterrated the size of the list to loop until it has no nodes left. In the while, I have to go through the list by making it checks each node in the list.
+
+4) As it goes through the list,I call the less function, which compares which string is greater. If it returns 1, I set it will hold the orev node and then have it hold current.
+
+5)After that, Hold next will the front of the list. and the front of the list will hold the next node to be iterated.
+
+ 

@@ -1,0 +1,22 @@
+Albara Mehene
+91.102
+
+Computing 2
+Assignment 4
+
+
+1) Basically for most of the function I called the linklist in 
+the queue function in a certain way.
+
+2)Queueinit I called the linkedlistInitDefault to create the linklist 
+itself.
+
+3) Queue empty was to check if it was empty or not, so it would return
+0 or 1.
+
+4)Queueput was just called the linkedlistAddNodeBack and that was it
+We only needed that function to create the nodes
+
+5) the Queueget function, I created the tempde node to hold the value that linkedlist RemoveNodeFront so i can bring back the value that was removed in the front of the list
+
+IMPORTANT: I created a static for linkedlist as global for all my function to use

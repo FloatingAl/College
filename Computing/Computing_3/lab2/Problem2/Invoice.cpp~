@@ -1,0 +1,63 @@
+#include <iostream>
+#include <string>
+#include "Invoice.h"
+
+
+string Invoice::getName()
+{
+	return name;
+}
+void Invoice::setName(string mName)
+{
+	name = mName;
+}
+
+
+string Invoice::getInfo()
+{
+	return info;
+}
+void Invoice::setInfo(string mInfo)
+{
+	info = mInfo;
+}
+
+
+int Invoice::getQuant()
+{
+	return quant;
+}
+void Invoice::setQuant(int mQuant)
+{
+	quant = mQuant;	
+}
+
+
+double Invoice::getPrice()
+{
+	return price;
+}
+void Invoice::setPrice(double mPrice)
+{
+	price = mPrice;
+}
+
+double Invoice::getInvoiceAmount()
+{
+	if(quant < 0)
+	{
+		quant = 0;
+	}
+	if( price < 0 )
+	{
+		price = 0;
+	}		
+	
+	return quant * price;
+
+	
+}
+
+	
+
+

@@ -1,0 +1,17 @@
+Albara Mehene
+
+Lab 10
+
+Valgrind Observation:
+
+1) In the function f5, p is being freed twice. You do not need to free p twice.
+
+2) In the function f3, they are freeing p before they return p. So basically they are returning nothing.
+
+3) In the f2, they are not freeing the p at all in the function
+
+4) The function f1, it is not mallocing space, so its not storing anything.
+
+5)In the f4 function, they are not freeing p.
+
+6) In the f6 function, They are not freeing p and

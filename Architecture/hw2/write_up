@@ -1,0 +1,10 @@
+Name:Albara Mehene
+Email: Albara_Mehene@student.uml.edu
+
+Degree of Sucess: 80%
+
+THe approach I took first was I wanted to take first the two floating points and creat a bit strings for each one. After studying on how to add two IEEE floating points, I first needed to save the matissa and exoponent into helper varibles. I printed out the expersions and found that I can subtract 127 to get an exponent. After doing so, I matched up the exponents to match each other to have the ability to add both. I then added both mantisas to a new variable and set the mantissa, exponent, and sign to its struct. I added back 127 to the exponent before setting it. Lastly called the function to creat a binary representation of the float.
+
+Problems:
+One problem I did not resolve for me was adding the hiddin bit to the mantissa. I was not able to add the bit thus having my output being incorrect but not much. I do understand that 1 is added to the beginning of the mantissa to normallize and to remove it at the end of the result. However doing so in code was a difficult task for me. Even though I did not finish, I will find out how to fix this problem in my own time.
+

@@ -1,0 +1,9 @@
+Name: Albara Mehene
+Assignment: hw1
+Class: Monday night
+Email: Albara_Mehene@student.uml.edu
+
+Degree of sucess: 90-100%
+
+Approach: 
+Approaching this assignment, I decided use the sample code provided by Dr. Hendrickson. Reading the code, I wanted to understand what was going and what I needed to do. The objective was to print out the mantissa, exponent, and sign followed by the binary part right beside it. I understood that the reason for the structer in the sample code was to be able to print out the binary representation in a neatly manner. To print out the mantissa, exponent, and sign, by directly going into the struct and printing. Looking at the sample code, I did not include the int type version of the floating point being that I wdid not need to print it out. Overall, this was a easy first assignment and feel that I accomplished everything that was needed

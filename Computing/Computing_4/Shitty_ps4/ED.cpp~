@@ -1,0 +1,72 @@
+#include "ED.hpp"
+
+//constructor
+ED::ED(std::string string1, std::string string2){
+  //basic assignment  
+  _str1 = string1;
+  _str2 = string2;
+
+  _str1Len = str1.size();
+  _str2Len = str2.size();
+
+  //allocate for the first dimension
+  _array = new int*[str1Len + 1];//+1 because we assume the first column/row is empty
+
+  //need to allocate 2nd dimension of array, <= because _array is (str1Len + 1)
+  for(int i = 0; i <= str1Len; ++i)
+    _array[i] = new int[str2Len + 1];//need str2Len + 1 b/c first column/row is empty
+
+  //populate the array
+  for(int j = 0; j <= str1Len; ++j)
+    _array[j][str2Len] = (str1Len - j) * 2;
+
+  for(int k = 0; k <= str2Len; ++k)
+    _array[str1Len][k] = (str2Len - k) * 2;
+
+}
+
+//get the penalty for comparing the args
+int ED::penalty(char a, char b){
+  int test;
+
+  test = b - a;
+  if(test == 0)//check if chars are the same
+    return 0;
+  return 1;
+}
+
+//returns minimum of the three args
+int ED::min(int a, int b, int c){
+  if(a <= b && a <= c)
+    return a;
+  if(b <= c && b <= a)
+    return b;
+  if(c <= a && c <= b)
+    return c;
+}
+
+//traverses the 2d array, the meat of the program have to move backwards (start at end)
+int ED::optDistance(){
+  
+}
+
+//traces the matrix and returns a string
+std::string ED::alignment(){
+  std::string
+}
+
+int ED::getStr1Len(){
+  return str1Len;
+}
+
+int ED::getStr2Len(){
+  return str2Len;
+}
+
+ED::~ED(){
+  //need to delete the memory we used for _array, this is second level
+  for(int i = 0; i < str1Len; ++i)
+    delete[] _array[i];
+  //need to delete the first level
+  delete _array;
+}

@@ -1,0 +1,15 @@
+Albara Mehene
+
+10/16/2015
+
+Computing II
+
+
+Partners: Chris and Rafael
+
+1) What the program does it has 2 functions. The Loadfile function reads the file and prints it out on screen. The Destroy function destroys the the memory that is being used by Loadfile. I have a structure that has Authorname and Book name. Instead of what we did in lab2, We have a structure and we need to access it through the created maloc we made. 
+
+2) I first copyed what was from la2. Instead, we are now using structurs so now we need to malloc it structure and then have it accesed by books. In the destroy function, I needed what was inside of books so I returned it. I then made a loop to free each element for BookName and authorName. Then I freed the the books I malloced.
+
+3) At first I wrote the code manually "gcc main.c Implement.c -o main"
+Then I made a makefile and was able to compile it using Make file.

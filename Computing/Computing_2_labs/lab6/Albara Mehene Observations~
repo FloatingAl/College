@@ -1,0 +1,34 @@
+Albara Mehene 
+
+10/23/2015
+
+Lab6
+
+What I did for this program: 
+To create static I first needed to apporach it with the top down approach. I created 3 targets for static. Static_lab6, create_static, and archieve_create. Now first I needed to have my_add and my_mult as a object. So I needed to put a .o at the end of there target. Now for the archieve_create I used (ar rcs my_library.a file1.o file2.o) command to make it. i added my_add and my_mult to be used. The I wrote the create static and ran the archieve_create. Then for the static_lab6, I used the create_static and wrote the compiler. To include the libary you need to use the -L./-l. I included the mymath libary and outputed to "lab6."
+Now for the shared libary, its basically almost the same. For the creation all I needed to do is gcc -shared <filenames> -o <libaryname.so>. However, the file couldn't find the shard file. Then I rename LD_LIBRARY_PATH=$LD_LIBARARY_PATH:./ THis means that I am directing the code to where the shared file is.
+So I made two outputs lab6 for static and lab6_2 for shared file. In the terminal I wrote make all and compiled both a static and shared output.
+
+Static vs shared:
+Static: are a collection of ordinary object files. The libraries are linked to programs without having to recompile the code. 
+
+Shared: are libraries that are loaded in the programs when they start. This can help update libraries and still support programs, overwrite libabries if necesary, and can be all done while running the previous libaries
+
+arc command:
+The arc command basically means its creating a archieve of the libabry. These libabries usually have a .a at the end of it.
+
+nm command:
+The nm command reports the list of symbols that are in the library. It is usable for both static and shared. It can list the symbol, evaluate the value, and its type.
+
+environment variable:
+Environment variables  are variables that can permit to override a process. For example, LD_LIBRARY_PATH this varaible can temporarly change a diffrent library for a execution.
+
+libraries on your system:
+
+ 
+
+
+
+
+
+

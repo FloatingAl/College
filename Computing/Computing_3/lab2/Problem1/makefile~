@@ -1,0 +1,26 @@
+cc = g++
+#all
+
+all : account_client
+
+account_client : account_client.o Account.o
+	$(cc) account_client.o Account.o -o main
+
+account_client.o : Account.h
+	$(cc) -c account_client.cpp -o account_client.o
+
+Account : Account.cpp Account.h
+	$(cc) -c Account.cpp -o Account.o
+
+
+clean:
+	 rm *.o account_client
+
+
+
+run:
+	./main
+
+
+debug: cc += -g
+debug: main

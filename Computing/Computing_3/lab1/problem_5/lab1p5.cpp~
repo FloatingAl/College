@@ -1,0 +1,19 @@
+#include <iostream>
+#include <cmath>
+
+int main()
+{
+  int base = 0;
+  int expo = 0;
+  int answer = 0;
+
+  std::cout << "Please pick base number:" << std::endl;
+  std::cin >> base;
+  std::cout << "Please pick exponent for the base:" << std::endl;
+  std::cin >> expo;
+
+  answer = std::pow(base,expo);
+  std::cout << "The answer is " << answer << std::endl;
+  
+
+}

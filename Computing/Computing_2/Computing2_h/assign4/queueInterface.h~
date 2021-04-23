@@ -1,0 +1,6 @@
+typedef int Item;
+
+void QUEUEinit();
+int QUEUEempty();
+void QUEUEput(Item);
+Item QUEUEget();

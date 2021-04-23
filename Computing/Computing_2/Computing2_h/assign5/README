@@ -1,0 +1,19 @@
+Albara Mehene
+
+
+Computing II
+
+Assignment 5
+
+
+What I did:
+
+1) First I spereated the code in a client, Implementaion, and Interface
+
+2) Then I first wanted to create the cricle so I copyed the same code to draw the circle which was sfCircleShape_setRadius and the sfRenderWindow_drawCircleShape. Now in the drawCircle I mutiplyed the radius by .75 each time it is called and subtracted n number of circles by 1 unti it hit 0
+
+3) Now I discovered I needed to have the circles in the middle. I went to libary a looked of what sfVector2f, SetPosistion, and Origin.
+
+4) I created the position by going into the Vector2f and giving x and y the WIDTH AND LENGTH and divided by two. Now for the Origin I Did the same thing but I equaled the x and y as the radius. As it changes, so does the posistion of the circle
+
+After that I made a if statment until it hit 0 it would quit and it would end.

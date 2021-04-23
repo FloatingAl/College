@@ -1,0 +1,7 @@
+Name: Albara Mehene
+Date: 3/8/2017
+Email: Albara_Mehene@student.uml.edu
+
+Degree of Success: 70%
+
+The first steps I took was copying the files needed from the cs305 folder. I created a new assembler to test if I could be able to.After that, I took the micro code and tried to modify it to take the MULT token and DIVID token but still have little no success to the steps I am taking. I was able to compile and output the nand shift and right shift operators. The rshift operator gave out correct integers in the accumlators as well as the nand operator. The issue I had with the Mult and divide operators was mostly errors with the symbol table not appearing when assembling the new masm. I was able to add the provided mult operator micro code to the C file however, I am un sure why I am getting a error regarding the the symbol not appearing. Over all it took sometime to finish this assignment however, in the end i was not able to fully complete it.

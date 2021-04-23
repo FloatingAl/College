@@ -1,0 +1,21 @@
+Albara Mehene
+
+10/8/2015
+
+lab7
+
+Report:
+1) I first took as much information from lab5, so I took the alogrithm of the orginal and used it to apply for the linklist.
+
+2) now instead of storing into a structure, we do it in a linklist. So I assumed we didn't need to make a pBook and we would use Book.
+
+3) In the implementation file, I called the linedlistInit Default and stored it into linklist. I then opened the file 
+
+4) now I created a struct cariable called books. I created a i for the iteration. I malloced buffer to hold the 55 lines in the file. I created a temp pointer to character to store the line and put it into the authorname and bookname. The length is for use of finding the exact amount of space for each of the line. 
+
+5) I then applyed what I did from lab5, using strcpy, strtok, fegts, and strlength
+
+6) for the destroy function, I pased the the front of the list and then I went to the structure and freed the authorname and the bookname. 
+
+7) After that, I finished everything else and cleaned up the sytax for minor problems.
+

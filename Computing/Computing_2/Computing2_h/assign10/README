@@ -1,0 +1,13 @@
+Albara Mehene
+
+11/30/2015
+
+What I Did)
+
+1) The first thing I created was I made a struct called record because we needed to have one of the assignment. In the record is a key of integer and the data also as type integer. I then changed all of the parameters that are using (Item*arr) to (Record*arr). 
+
+2) Now because we are using a record with two things in it instead of a one whole thing, I added .key and .data to any arr[] because we are now using keys and data instead of just one whole. I also malloced space for the struct record instead of a int
+
+3) After implementing the keys and data, I brought my less function from the previous assignment to be able to compare which is smallest or biggest. In the heapify function Instead of comparing left and index I campared the left keys left and right to the index then making it stored into largest.
+
+4) In the largest function I basiclly just made another tempdata to able to store the data. Because now we have 2 objects in the strcut record. 

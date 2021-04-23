@@ -1,0 +1,35 @@
+cc = gcc
+
+#all
+all : static_lab6 shared_lab6
+
+static_lab6 : create_static
+	gcc lab6.c -L./ -lmymath -o lab6
+shared_lab6 : create_shared
+	gcc lab6.c -L./ -lmymath -o lab6_2
+create_static: archive_create 
+
+create_shared: shared_make
+
+archive_create : my_add.o my_mult.o
+	ar rcs libmymath.a my_add.o my_mult.o
+shared_make : my_add.o my_mult.o
+	gcc -shared my_add.o my_mult.o -o libmymath.so 
+
+my_add.o : my_add.c my_add.h
+	$(cc) -c my_add.c -o my_add.o
+my_mult.o : my_mult.h my_mult.c
+	$(cc) -c my_mult.c -o my_mult.o
+
+clean:
+	 rm *.o lab6 lab6_2 *.a *.so
+
+
+my_static:
+	./lab6
+
+my_shared:
+	./lab6_2
+
+debug: cc += -g
+debug: lab6 lab6_2

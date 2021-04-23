@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include "item.h"
+#include "linkedListSt.h"
+
+int less(Item string1, Item string2)
+{
+	printf("OKAYYYYYYY\n");
+	if(strcmp(string1,string2) > 0)
+	{
+		printf("Ayeeeeeeee\n");
+		return 1;
+	
+	} 
+	else if(strcmp(string1,string2) == 0)
+	{
+		printf("Whats up ?\n");
+		return 0;
+	}
+
+}
